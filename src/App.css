@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+div.fixed {
+  position: fixed;
+  right: 0;
+
+  width: 50%;
+  bottom: 10px;
+}
+.new {
+  position: fixed;
+  left: 70px;
+  bottom: -8px;
+}
+.sort {
+  position: fixed;
+  left: 20px;
+  bottom: -7px;
+}
+#react-paginate ul {
+  display: inline-block;
+  margin-left: 20px;
+  padding-left: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#react-paginate li {
+  display: inline-block;
+  border: 1px solid rgb(224, 224, 224);
+  color: #000;
+  cursor: pointer;
+  margin-right: 3px;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#react-paginate li a {
+  padding: 2px 5px;
+  display: inline-block;
+  color: #000;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#react-paginate li.active {
+  background: rgb(52, 68, 204);
+  outline: none;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page {
+  position: fixed;
+  right: 40px;
+  bottom: 0px;
 }
